@@ -7,6 +7,7 @@ class Ship
     @name = details[:name]
     @type = details[:type]
     @booty = details[:booty]
+    @@ships << self
   end
 
   def self.all
